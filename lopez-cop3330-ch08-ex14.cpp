@@ -6,97 +6,107 @@
 #include <iostream>
 using namespace std;
 
+//function to add the values together with the first value being altered
 void addDouble(double value1, double value2) {
     value1 = value1 + value2; //you can modify the values when they aren't declared as const
-    cout << "\nThe new value1: " << value1 << "\n";
+    cout << "\nThe new value #1: " << value1 << "\n"; //tell the user the new altered value
 
-    double sum = value1 + value2;
+    double sum = value1 + value2; //find the sum
 
-    cout << "The sum is " << sum << ".\n";
+    cout << "The sum is " << sum << ".\n"; //tell the user the sum
 }
 
+//function to add the values together while they are declared as const with the first value being altered
 void addConstDouble(double const value1, double const value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
-    cout << "\nThe new value1: " << value1 << "\n";*/
+    cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
-    double sum = value1 + value2;
+    double sum = value1 + value2; //find the sum
 
-    cout << "The sum is " << sum << ".\n";
+    cout << "The sum is " << sum << ".\n"; //tell the user the sum
 }
 
+//function to find the difference of the values with the first value being altered
 void subDouble(double value1, double value2) {
     value1 = value1 + value2; //you can modify the values when they aren't declared as const
-    cout << "\nThe new value1: " << value1 << "\n";
+    cout << "\nThe new value #1: " << value1 << "\n"; //tell the user the new altered value
 
-    double difference = value1 - value2;
+    double difference = value1 - value2; //find the difference
 
-    cout << "The difference is " << difference << ".\n";
+    cout << "The difference is " << difference << ".\n"; //tell the suer the difference
 }
 
+//function to find the difference of the values while they are declared as const with the first value being altered
 void subConstDouble(double const value1, double const value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
-    cout << "\nThe new value1: " << value1 << "\n";*/
+    cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
-    double difference = value1 - value2;
+    double difference = value1 - value2; //find the difference
 
-    cout << "The difference is " << difference << ".\n";
+    cout << "The difference is " << difference << ".\n"; //tell the user the difference
 }
 
+//function to find the product of the values with the first value being altered
 void multiplyDouble(double value1, double value2) {
     value1 = value1 + value2; //you can modify the values when they aren't declared as const
-    cout << "\nThe new value1: " << value1 << "\n";
+    cout << "\nThe new value #1: " << value1 << "\n"; //tell the user the new altered value
 
-    double product = value1 * value2;
+    double product = value1 * value2; //find the product
 
-    cout << "The product is " << product << ".\n";
+    cout << "The product is " << product << ".\n"; //tell the user the product
 }
 
+//function to find the product of the values while they are declared as const with the first value being altered
 void multiplyConstDouble(double const value1, double const value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
-    cout << "\nThe new value1: " << value1 << "\n";*/
+    cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
-    double product = value1 * value2;
+    double product = value1 * value2; //find the product
 
-    cout << "The product is " << product << ".\n";
+    cout << "The product is " << product << ".\n"; //tell the user the product
 }
 
+//function to find the quotient of the values with the first value being altered
 void divideDouble(double value1, double value2) {
     value1 = value1 + value2; //you can modify the values when they aren't declared as const
-    cout << "\nThe new value1: " << value1 << "\n";
+    cout << "\nThe new value #1: " << value1 << "\n"; //tell the user the new altered value
 
-    double quotient = value1 / value2;
+    double quotient = value1 / value2; //find the quotient
 
-    cout << "The quotient is " << quotient << ".\n";
+    cout << "The quotient is " << quotient << ".\n"; //tell the user the quotient
 }
 
+//function to find the quotient of the values while they are declared as const with the first value being altered
 void divideConstDouble(double const value1, double const value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
-    cout << "\nThe new value1: " << value1 << "\n";*/
+    cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
-    double quotient = value1 / value2;
+    double quotient = value1 / value2; //find the quotient
 
-    cout << "The quotient is " << quotient << ".\n";
+    cout << "The quotient is " << quotient << ".\n"; //tell the user the quotient
 }
 
 double main() {
-    double value1;
-    double value2;
+    double value1; //declare a double to hold the user's first value
+    double value2; //declare a double to hold the user's second value
 
+    //tell the user to input two values
     cout << "Input two values.\n";
-    cin >> value1;
-    cin >> value2;
 
-    addDouble(value1, value2);
-    //addConstDouble(value1, value2);
+    cin >> value1; //get the user's first value
+    cin >> value2; //get the user's second value
 
-    subDouble(value1, value2);
-    //subConstDouble(value1, value2);
+    addDouble(value1, value2); //find the sum of the values with the first value being altered
+    //addConstDouble(value1, value2); //find the sum of the values with the first value being altered
 
-    multiplyDouble(value1, value2);
-    //multiplyConstDouble(value1, value2);
+    subDouble(value1, value2); //find the difference of the values with the first value being altered
+    //subConstDouble(value1, value2); //find the difference of the values with the first value being altered
 
-    divideDouble(value1, value2);
-    //divideConstDouble(value1, value2);
+    multiplyDouble(value1, value2); //find the product of the values with the first value being altered
+    //multiplyConstDouble(value1, value2); //find the product of the values with the first value being altered
+
+    divideDouble(value1, value2); //find the quotient of the values with the first value being altered
+    //divideConstDouble(value1, value2); //find the quotient of the values with the first value being altered
 
     return 0;
 }
