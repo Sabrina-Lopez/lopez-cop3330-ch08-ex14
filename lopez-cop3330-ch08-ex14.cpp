@@ -17,7 +17,7 @@ void addDouble(double value1, double value2) {
 }
 
 //function to add the values together while they are declared as const with the first value being altered
-void addConstDouble(double const value1, double const value2) {
+void addConstDouble(const double value1, const double value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
     cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
@@ -37,7 +37,7 @@ void subDouble(double value1, double value2) {
 }
 
 //function to find the difference of the values while they are declared as const with the first value being altered
-void subConstDouble(double const value1, double const value2) {
+void subConstDouble(const double value1, const double value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
     cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
@@ -57,7 +57,7 @@ void multiplyDouble(double value1, double value2) {
 }
 
 //function to find the product of the values while they are declared as const with the first value being altered
-void multiplyConstDouble(double const value1, double const value2) {
+void multiplyConstDouble(const double value1, const double value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
     cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
@@ -77,7 +77,7 @@ void divideDouble(double value1, double value2) {
 }
 
 //function to find the quotient of the values while they are declared as const with the first value being altered
-void divideConstDouble(double const value1, double const value2) {
+void divideConstDouble(const double value1, const double value2) {
     /*value1 = value1 + value2; //you can't modify the values when they are declared as const
     cout << "\nThe new value #1: " << value1 << "\n";*/ //tell the user the new altered value
 
@@ -86,7 +86,7 @@ void divideConstDouble(double const value1, double const value2) {
     cout << "The quotient is " << quotient << ".\n"; //tell the user the quotient
 }
 
-double main() {
+int main() {
     double value1; //declare a double to hold the user's first value
     double value2; //declare a double to hold the user's second value
 
